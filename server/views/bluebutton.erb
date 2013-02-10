@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title><%= params[:name].capitalize %> for Blue Button</title>
+  <link rel="stylesheet" href="/app.css">
+  <script src="http://use.typekit.com/hzw5hwn.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="content">
+      <ul>
+        <li class="app-icon"><div style="background: url('<%= img_asset "#{params[:name]}_30px.png" %>');"></div></li>
+        <li class="title"></span><%= params[:name].capitalize %><span class="thin"> for Blue Button</span></li>
+      </ul>
+    </div>
+  </div>
+  
+  <%= js_asset 'jquery-1.8.2.min.js' %>
+  <%= js_asset 'raphael-2.1.0.min.js' %>
+  
+  <script>
+    var CURRENT_APP = <%= Engine.get_app(params[:name]).to_json %>;
+  </script>
+  
+  <%= javascript_include_tag '/runner-build.js' %>
+  
+</body>
+</html>

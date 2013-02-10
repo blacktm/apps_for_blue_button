@@ -1,0 +1,27 @@
+
+{
+	"app_name": "Medications",
+	"actions": [{
+		"name": "ui_modal",
+		"properties": {
+			"title": "Medications",
+			"content": "This app will create a medication list with drug images, refill information, and links to price information from provided Blue Button data. (No information will be stored.)<br><br>Built by <a href='http://www.twitter.com/blacktm' target='_blank'>@blacktm</a>"
+		}
+	}, {
+		"name": "ui_prompt_blue_button",
+		"properties": {
+			"title": "Enter Your Blue Button Data"
+		}
+	}, {
+		"name": "parse_blue_button",
+		"properties": {}
+	}, {
+		"name": "blue_button_to_medications",
+		"properties": {}
+	}, {
+		"name": "ui_medications_view",
+		"properties": {
+			"title": "Your Medications"
+		}
+	}]
+}

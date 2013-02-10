@@ -1,0 +1,27 @@
+
+{
+	"app_name": "Vitals",
+	"actions": [{
+		"name": "ui_modal",
+		"properties": {
+			"title": "Vitals",
+			"content": "This app will ... from provided Blue Button data. (No information will be stored.)<br><br>Built by <a href='http://www.twitter.com/blacktm' target='_blank'>@blacktm</a>"
+		}
+	}, {
+		"name": "ui_prompt_blue_button",
+		"properties": {
+			"title": "Enter Your Blue Button Data"
+		}
+	}, {
+		"name": "parse_blue_button",
+		"properties": {}
+	}, {
+		"name": "blue_button_to_vitals",
+		"properties": {}
+	}, {
+		"name": "ui_vitals_view",
+		"properties": {
+			"title": "Your Vitals"
+		}
+	}]
+}

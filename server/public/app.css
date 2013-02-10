@@ -1,0 +1,227 @@
+/* Resets */
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q,
+samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article,
+aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* Base ***********************************************************************/
+
+html {
+	height: 100%;
+}
+
+/* Available fonts: "proxima-nova", "museo", "museo-slab" */
+
+body {
+	height: 100%;
+	background: #5e6b7e url('/img/low_contrast_linen_blue.jpg') repeat;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	overflow: hidden;
+}
+
+.center {
+	text-align: center;
+}
+
+.big-text {
+	font-size: 22px;
+}
+
+/* Header *********************************************************************/
+
+.header {
+	position: absolute;
+	height: 50px;
+	min-width: 550px;
+	left: 0;
+	right: 0;
+	background: #3f558c;
+	/* border-top: 1px solid #2c4972; */
+	border-top: 1px solid #2c4a88;
+/* 	background: -moz-linear-gradient(top, #4675b8, #2c4972); */
+/* 	background: -webkit-linear-gradient(top, #4675b8, #2c4972); */
+	background: -moz-linear-gradient(top, #6e85b7, #2c4a88);
+	background: -webkit-linear-gradient(top, #6e85b7, #2c4a88);
+/* 	border-bottom: 1px solid #4675b8; */
+	border-bottom: 1px solid #5e78a8;
+	box-shadow:	0 1px 0 #000, 0 3px 5px rgba(0, 0, 0, 0.3);
+	z-index: 2;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.header .content {
+	margin: 0 auto;
+	padding: 0 15px;
+	color: #ffffff;
+	text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.header ul {
+	display: block;
+	position: relative;
+	top: 14px;
+	list-style: none;
+}
+
+.header ul li {
+	display: inline;
+	margin-left: 25px;
+	float: right;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: default;
+}
+
+.header ul li.app-icon {
+	margin: -7px 12px 0 0;
+	float: left;
+}
+
+.header ul li.app-icon div {
+	width: 30px;
+	height: 30px;
+	border: 3px solid #2c4973;
+	box-shadow: 0 1px 0 #4675b8;
+	border-radius: 7px;
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+}
+
+.header ul li.title {
+	margin: 0;
+	float: left;
+}
+
+.header ul li.title span.thin {
+	font-weight: 300;
+}
+
+.header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* UI Elements ****************************************************************/
+
+#view {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 500px;
+	height: 500px;
+	height: auto;
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	border-radius: 5px;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+	z-index: 10;
+}
+
+#view-header {
+	padding: 15px 0 13px 20px;
+	overflow: hidden;
+	font-size: 24px;
+	font-weight: bold;
+	border-bottom: 1px solid #cdcdcd;
+}
+
+#view-content {
+	max-height: 300px;
+	padding: 20px;
+	font-size: 16px;
+	overflow: auto;
+	word-wrap: break-word;
+}
+
+#view-content h1 {
+	margin-bottom: 15px;
+}
+
+#view-content p {
+	margin-bottom: 15px;
+}
+
+#view-content a {
+	color: #005ce4;
+	text-decoration: none;
+	border-bottom: 1px dotted #005ce4;
+}
+
+#view-content a:active {
+	color: #003fa0;
+	border-bottom: 1px dotted #003fa0;
+}
+
+#view-footer {
+	padding: 10px 10px 10px 10px;
+	background: #ebebeb;
+	font-weight: bold;
+	text-align: right;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 0 #fff;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.btn-modal {
+	display: inline-block;
+	margin-left: 5px;
+	padding: 9px 14px;
+	border-radius: 5px;
+	cursor: pointer;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+	background: -moz-linear-gradient(top, #4675b8, #2c4972);
+	background: -webkit-linear-gradient(top, #4675b8, #2c4972);
+	border: 1px solid #233b5c;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn-modal:hover {
+	background: -moz-linear-gradient(top, #4778c0, #325382);
+	background: -webkit-linear-gradient(top, #4778c0, #325382);
+}
+
+.btn-modal:active {
+	background: -moz-linear-gradient(top, #355b91, #2c4972);
+	background: -webkit-linear-gradient(top, #355b91, #2c4972);
+	box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.btn-modal.cancel {
+	background: -moz-linear-gradient(top, #fff, #e6e6e6);
+	background: -webkit-linear-gradient(top, #fff, #e6e6e6);
+	color: #404040;
+	text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.5);
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-modal.cancel:hover {
+	background: -moz-linear-gradient(top, #f9f9f9, #e6e6e6);
+	background: -webkit-linear-gradient(top, #f9f9f9, #e6e6e6);
+}
+
+.btn-modal.cancel:active {
+	background: -moz-linear-gradient(top, #e6e6e6, #ccc);
+	background: -webkit-linear-gradient(top, #e6e6e6, #ccc);
+}

@@ -1,0 +1,163 @@
+/* Resets */
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q,
+samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article,
+aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* Base ***************************************************/
+
+body {
+	height: 100%;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 400;
+	background: #ebebeb;
+	background-image: url('/img/fabric_1.png');
+	line-height: 1.5em;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px #404040 dotted;
+	color: #000;
+}
+
+.section {
+	min-width: 1000px;
+}
+
+.section .content {
+	margin: 0 auto;
+	padding: 0 20px;
+	width: 960px;
+}
+
+/* Header *************************************************/
+
+.header {}
+
+.header .content {}
+
+.header.ia {
+	background: #404040;
+	background: -moz-linear-gradient(top, #595959, #262626);
+	background: -webkit-linear-gradient(top, #595959, #262626);
+}
+
+.header.ia .content {
+	padding: 8px 0;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.header.ia h1 {
+	font-size: 20px;
+}
+
+.header.ia a {
+	border-bottom: none;
+	-moz-transition: text-shadow 0.5s ease-in-out 0s;
+	-webkit-transition: text-shadow 0.5s ease-in-out 0s;
+}
+
+.header.ia a:hover {
+	text-shadow:  0 1px 0 rgba(255, 255, 255, 0.25),
+								0 0 10px rgba(255, 255, 255, 0.3);
+	-moz-transition: text-shadow 0.3s ease-in-out 0s;
+	-webkit-transition: text-shadow 0.3s ease-in-out 0s;
+}
+
+.header.appyard {
+	background: #404040;
+	margin-bottom: 60px;
+	background: #02498c;
+	background: -moz-linear-gradient(top, #6e85b7, #2c4a88);
+	background: -webkit-linear-gradient(top, #6e85b7, #2c4a88);
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-top: 1px solid rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+}
+
+.header.appyard .content {
+	padding: 15px 0;
+	color: #fff;
+	text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.header.appyard h1 {
+	font-size: 30px;
+	line-height: 1.25em;
+}
+
+.header.appyard h2 {
+	font-size: 24px;
+	line-height: 1.25em;
+}
+
+/* Page ***************************************************/
+
+.page {
+}
+
+.page .content {
+	margin: 0 auto;
+	color: #404040;
+	text-shadow: 0 1px 0 #fff;
+	font-size: 18px;
+}
+
+/* UI *****************************************************/
+
+ul.boxes {
+	text-align: center;
+}
+
+ul.boxes li {
+	display: inline-block;
+	margin: 0 60px 40px 0;
+	width: 250px;
+	text-align: left;
+	vertical-align: top;
+}
+
+ul.boxes li img {
+}
+
+ul.boxes li h1 {
+	font-size: 20px;
+	line-height: 1.25em;
+	margin-bottom: 10px;
+}
+
+ul.boxes li p {
+	color: #656565;
+	margin-bottom: 7px;
+}
+
+ul.boxes li a {
+	text-decoration: none;
+	color: #404040;
+}
+
+ul.boxes li a div {
+	margin-bottom: 20px;
+	width: 250px;
+	height: 250px;
+	border-radius: 25px;
+	background-repeat: no-repeat;
+	box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.7),
+							inset 0 -2px 0 rgba(0, 0, 0, 0.45),
+										0px 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+ul.boxes li:nth-last-child(3n + 1) {
+	margin-right: 0;
+}

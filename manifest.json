@@ -1,0 +1,28 @@
+
+{
+	"build_name": "Main Build",
+	"scripts_path": "scripts/",
+	"compiler_path": "vendor/",
+	"build_path": "server/public/",
+	"build_filename": "runner-build.js",
+	"copyright": "/**\n * Tom Black (@blacktm) (C) 2012\n */\n",
+	"import": "CURRENT_APP",
+	"scripts": [
+		"main",
+		"runner",
+		"core/core",
+		"ui/ui",
+		"ui/view",
+		"ui/view/button",
+		"ui/view/content",
+		"ui/view/footer",
+		"ui/view/header",
+		"ui/actions/actions",
+		"ui/actions/ui_lab_view",
+		"ui/actions/ui_medications_view",
+		"ui/actions/ui_modal",
+		"ui/actions/ui_prompt_blue_button",
+		"ui/actions/ui_view_text",
+		"ui/actions/ui_vitals_view"
+	]
+}

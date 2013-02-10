@@ -1,0 +1,9 @@
+source :rubygems
+
+gem 'sinatra'
+
+gem 'thin'
+gem 'json'
+
+gem 'blue_button_parser'
+gem 'builder'
